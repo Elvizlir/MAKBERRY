@@ -1,0 +1,28 @@
+mixin header-block()
+	// start header-block
+	+b.header-block#header-block
+		.container
+			.row
+				+e.col.col-auto
+					a(href="/")
+						+e.IMG.logo(src="img/logo.png" alt="#")
+				+e.col.col.d-none.d-xl-block
+					+top-nav()
+				+e.col--form.col-xl-3.col
+					+form-wrap
+						+input("Введите название или артикул товара")
+						+e.icon-wrapper
+							+e.btn.btn.btn-search(type="submit")
+								+icon("search")
+							a(href="#")
+								+icon("profile")
+							a(href="#")
+								+e.basket-wrapper
+									+icon("basket")
+									+e.counter 0
+				+e.col.phone-col.col-auto
+					+e.A.phone(href="tel:+74959746146") +7 495 
+						span 974 61 46
+					+e.A.phone(href="tel:+78002344330") +7 800 
+						span 234 43 30
+	// end header-block

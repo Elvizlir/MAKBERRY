@@ -1,0 +1,78 @@
+mixin s-popular()
+	// start s-popular
+	+b.SECTION.s-popular.section.lazy-background#s-popular&attributes(attributes)
+		.container
+			//- +b.section-title.text-center
+				//- h2 s-popular
+			.row
+				+e.news-col.col-xxl-3.col-12
+					+e.news-title Новости компании
+					+e.news-wrapper
+						mixin news-i(d, i)
+							+e.news-item
+								+e.news-date=d
+								+e.IMG.news-img(src=`img/news-img${i}.jpg` alt="")
+								+e.news-text
+									block
+								+e.news-link
+									a(href="#") Подробнее
+						+news-i("28/06/2019", "1")
+							| Представляем вашему вниманию фасад Прованс&nbsp;с&nbsp;патиной&nbsp;под покраску по&nbsp;новой программе&nbsp;JUST-&nbsp;in-TIME (Россия)
+						+news-i("28/06/2019", "2")
+							| Представляем вашему вниманию фасад Прованс&nbsp;с&nbsp;патиной&nbsp;под покраску по&nbsp;новой программе&nbsp;JUST-&nbsp;in-TIME (Россия)
+				.col-xxl-9.col-12
+					+e.H2.title Популярные товары
+					+b.tabs
+						+e.caption
+							+e.btn.active Классика
+							+e.btn Модерн
+						+e.wrap
+							+e.content.active
+								.row
+									mixin cat-i(i, t, p)
+										.s-popular__cat-col.col-md-4.col-6
+											a(href="#")
+												.s-popular__img-wrap
+													img.s-popular__img(src=`img/cat-i${i}.jpg` alt="")
+												.s-popular__rate-wrap
+													+icon("star")
+													+icon("star")
+													+icon("star")
+													+icon("star")
+													+icon("star")
+												.s-popular__cat-title=t
+												.s-popular__price от 
+													span=p
+												.s-popular__i-add
+													.s-popular__btn.btn.btn-primary в корзину
+													.s-popular__add-svg-wrap
+														+icon("star")
+													.s-popular__add-svg-wrap
+														+icon("controls")
+									+cat-i("1", "Портофино Капучино", "13440 Р.")
+									+cat-i("2", "Лугано Винно-красный", "8900 Р.")
+									+cat-i("3", "Интегра голубой", "5200 Р.")
+									+cat-i("4", "Фиджи Сирень", "6250 Р.")
+									+cat-i("5", "Кальяри", "16250 Р.")
+								h2.s-popular__title.title--new Новинки
+								.row
+									+cat-i("6", "Кальяри", "16250 Р.")
+									+cat-i("7", "Фиджи Сирень", "13440 Р.")
+									+cat-i("8", "Интегра голубой", "5200 Р.")
+									+cat-i("9", "Лугано Винно-красный", "8900 Р.")
+									+cat-i("10", "Портофино Капучино", "13440 Р.")
+							+e.content
+								.row
+									+cat-i("1", "Портофино Капучино", "13440 Р.")
+									+cat-i("2", "Лугано Винно-красный", "8900 Р.")
+									+cat-i("3", "Интегра голубой", "5200 Р.")
+									+cat-i("4", "Фиджи Сирень", "6250 Р.")
+									+cat-i("5", "Кальяри", "16250 Р.")
+								h2.s-popular__title.title--new Новинки
+								.row
+									+cat-i("6", "Кальяри", "16250 Р.")
+									+cat-i("7", "Фиджи Сирень", "13440 Р.")
+									+cat-i("8", "Интегра голубой", "5200 Р.")
+									+cat-i("9", "Лугано Винно-красный", "8900 Р.")
+									+cat-i("10", "Портофино Капучино", "13440 Р.")
+	// end s-popular

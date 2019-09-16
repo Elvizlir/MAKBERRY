@@ -1,0 +1,23 @@
+mixin s-done-slider()
+	// start s-done-slider
+	+b.SECTION.s-done-slider.section.lazy-background#s-done-slider&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Готовые решения
+			.slider--js-2.swiper-container
+				.swiper-wrapper
+					.swiper-slide
+						+e.IMG.slide-img(src="img/new-s1.jpg" alt="#")
+					.swiper-slide
+						+e.IMG.slide-img(src="img/new-s2.jpg" alt="#")
+					.swiper-slide
+						+e.IMG.slide-img(src="img/new-s1.jpg" alt="#")
+					.swiper-slide
+						+e.IMG.slide-img(src="img/new-s2.jpg" alt="#")
+			+e.btn-wrap
+				.swiper-btn.swiper-btn-prev
+						+icon("back")
+				.swiper-btn.swiper-btn-next
+					+icon("next")
+			
+	// end s-done-slider

@@ -1,0 +1,26 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-catalog-slider/_s-catalog-slider.pug
+include ../blocks/s-catalog-slider/_s-catalog-slider.pug
+include ../blocks/s-popular/_s-popular.pug
+include ../blocks/s-done-slider/_s-done-slider.pug
+block variables
+	- let  mainPage= null
+block title
+	title title
+
+block pagecontent
+ 
+	+mob-mnu()
+	+top-line()
+	+header-block()
+	+s-catalog-slider()
+	+s-popular()
+	+s-done-slider()
+	//- +s-form()
+	+s-contact()
+	+footer()
+

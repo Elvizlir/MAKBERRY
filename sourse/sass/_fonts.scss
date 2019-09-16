@@ -1,0 +1,7 @@
+
+
+@include font-face ("Arial", "../fonts/ArialMT", $file-formats: woff2);
+@include font-face ("Calibri", "../fonts/Calibri", $file-formats: woff2);
+@include font-face ("Calibri", "../fonts/Calibri-Bold", bold, $file-formats: woff2);
+@include font-face ("Myriad", "../fonts/MyriadPro-Regular", $file-formats: woff2);
+@include font-face ("Myriad", "../fonts/MyriadPro-Bold", bold, $file-formats: woff2);
