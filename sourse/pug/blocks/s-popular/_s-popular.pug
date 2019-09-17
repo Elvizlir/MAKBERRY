@@ -5,22 +5,7 @@ mixin s-popular()
 			//- +b.section-title.text-center
 				//- h2 s-popular
 			.row
-				+e.news-col.col-xxl-3.col-12
-					+e.news-title Новости компании
-					+e.news-wrapper
-						mixin news-i(d, i)
-							+e.news-item
-								+e.news-date=d
-								+e.IMG.news-img(src=`img/news-img${i}.jpg` alt="")
-								+e.news-text
-									block
-								+e.news-link
-									a(href="#") Подробнее
-						+news-i("28/06/2019", "1")
-							| Представляем вашему вниманию фасад Прованс&nbsp;с&nbsp;патиной&nbsp;под покраску по&nbsp;новой программе&nbsp;JUST-&nbsp;in-TIME (Россия)
-						+news-i("28/06/2019", "2")
-							| Представляем вашему вниманию фасад Прованс&nbsp;с&nbsp;патиной&nbsp;под покраску по&nbsp;новой программе&nbsp;JUST-&nbsp;in-TIME (Россия)
-				.col-xxl-9.col-12
+				.col-xl-9.col-12.order-xl-last
 					+e.H2.title Популярные товары
 					+b.tabs
 						+e.caption
@@ -75,4 +60,19 @@ mixin s-popular()
 									+cat-i("8", "Интегра голубой", "5200 Р.")
 									+cat-i("9", "Лугано Винно-красный", "8900 Р.")
 									+cat-i("10", "Портофино Капучино", "13440 Р.")
+				+e.news-col.col-xl-3.col-12
+					+e.news-title Новости компании
+					+e.news-wrapper
+						mixin news-i(d, i)
+							+e.news-item
+								+e.news-date=d
+								+e.IMG.news-img(src=`img/news-img${i}.jpg` alt="")
+								+e.news-text
+									block
+								+e.news-link
+									a(href="#") Подробнее
+						+news-i("28/06/2019", "1")
+							| Представляем вашему вниманию фасад Прованс&nbsp;с&nbsp;патиной&nbsp;под покраску по&nbsp;новой программе&nbsp;JUST-&nbsp;in-TIME (Россия)
+						+news-i("28/06/2019", "2")
+							| Представляем вашему вниманию фасад Прованс&nbsp;с&nbsp;патиной&nbsp;под покраску по&nbsp;новой программе&nbsp;JUST-&nbsp;in-TIME (Россия)
 	// end s-popular

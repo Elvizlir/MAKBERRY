@@ -3,23 +3,24 @@ mixin header-block()
 	+b.header-block#header-block
 		.container
 			.row
-				+e.col.col-auto
+				+e.col.col-md-auto.col
 					a(href="/")
 						+e.IMG.logo(src="img/logo.png" alt="#")
 				+e.col.col.d-none.d-xl-block
 					+top-nav()
-				+e.col--form.col-xl-3.col
+				+e.col--form.col-md-auto
 					+form-wrap
 						+input("Введите название или артикул товара")
-						+e.icon-wrapper
-							+e.btn.btn.btn-search(type="submit")
-								+icon("search")
-							a(href="#")
-								+icon("profile")
-							a(href="#")
-								+e.basket-wrapper
-									+icon("basket")
-									+e.counter 0
+						+e.btn.btn.btn-search(type="submit")
+							+icon("search")
+				+e.col.col-auto
+					+e.icon-wrapper
+						a(href="#")
+							+icon("profile")
+						a(href="#")
+							+e.basket-wrapper
+								+icon("basket")
+								+e.counter 0
 				+e.col.phone-col.col-auto
 					+e.A.phone(href="tel:+74959746146") +7 495 
 						span 974 61 46

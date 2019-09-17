@@ -1,13 +1,45 @@
 .header-block {
 	display: block;
 	padding: rem(13) 0;
+	&__icon-wrapper{
+		margin-left: -30px;
+		a{
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	&__basket-wrapper{
+		position: relative;
+		display: inline-block;
+	}
+	&__counter{
+		font-size: rem(14);
+		width: rem(16);
+		height: rem(16);
+		border-radius: 50%;
+		line-height: 1;
+		color: #fff;
+		background-color: #1A171B;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: rem(-3);
+		right: rem(-3);
+	}
 	&__logo{
-		max-width: 80%;
+		max-width: rem(184);
 		@include media-breakpoint-up(xxl){
-			max-width: 100%;
+			max-width: unset;
 		}
 	}
 	.form-wrap{
+		@include media-breakpoint-up(md){
+			margin-right: rem(10);
+			margin-left: auto;
+			max-width: rem(367);
+		}
 		
 		form{
 			display: flex;
@@ -17,43 +49,13 @@
 			flex-grow: 1;
 			margin: 0;
 			margin-right: 5px;
+			margin-left: auto;
 		}
 		&__input{
-			margin-left: auto;
-			@include media-breakpoint-up(xl){
-				margin: 0;
-			}
 			border-radius: 0;
 			border: 1px solid #272427;
 			outline: none;
 			width: 100%;
-			max-width: rem(367);
-		}
-		&__icon-wrapper{
-			a{
-				&:hover{
-					text-decoration: none;
-				}
-			}
-		}
-		&__basket-wrapper{
-			position: relative;
-			display: inline-block;
-		}
-		&__counter{
-			font-size: rem(14);
-			width: rem(16);
-			height: rem(16);
-			border-radius: 50%;
-			line-height: 1;
-			color: #fff;
-			background-color: #1A171B;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			position: absolute;
-			top: rem(-3);
-			right: rem(-3);
 		}
 	}
 	.btn-search{
@@ -64,15 +66,12 @@
 		font-size: rem(25);
 		color: $body-color;
 		// &:not(:last-child){
-		// 	margin-right: rem(20);
-		// }
-	}	
-
-	.icon-search{
-		margin-right: rem(20);
-	}	
+			// 	margin-right: rem(10);
+			// }
+		}	
+		
 	.icon-profile{
-		margin-right: rem(20);
+		margin-right: rem(10);
 	}	
 	&__phone{
 		@include media-breakpoint-up(xxl){
@@ -96,9 +95,18 @@
 	&__col{
 		align-self: center;
 		&--form{
+			@include media-breakpoint-down(sm){
+				order: 13;
+				padding-top: rem(10);
+			}
+			@include media-breakpoint-up(md){
+				flex: 0 0 50%;
+				margin-left: auto;
+				max-width: 50%;
+			}
 			@include media-breakpoint-up(xl){
-				flex: 0 0 30%;
-				max-width: 30%;
+				flex: 0 0 25%;
+				max-width: 25%;
 			}
 		}
 	}

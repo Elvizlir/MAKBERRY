@@ -3,6 +3,17 @@ mixin s-catalog-slider()
 	+b.SECTION.s-catalog-slider.section.lazy-background#s-catalog-slider&attributes(attributes)
 		.container
 			.row
+				+e.slider-col.col-12.col-lg-8.order-lg-last
+					.swiper-btn.swiper-btn-prev
+						+icon("back")
+					.swiper-btn.swiper-btn-next
+						+icon("next")
+					.slider--js.swiper-container
+						.swiper-wrapper
+							.swiper-slide.object-fit-js
+								+e.IMG.slide-img(src="img/slider-img.jpg" alt="#")
+							.swiper-slide.object-fit-js
+								+e.IMG.slide-img(src="img/slider-img.jpg" alt="#")
 				+e.catalog.col-12.col-lg-4.bg-light
 					+e.H3.title лучшие коллекции товаров
 					.row
@@ -17,16 +28,5 @@ mixin s-catalog-slider()
 						+sl-c("4","Лугано")
 						+sl-c("5","Кальяри")
 						+sl-c("6","Палермо")
-				+e.slider-col.col-12.col-lg-8
-					.swiper-btn.swiper-btn-prev
-						+icon("back")
-					.swiper-btn.swiper-btn-next
-						+icon("next")
-					.slider--js.swiper-container
-						.swiper-wrapper
-							.swiper-slide
-								+e.IMG.slide-img(src="img/slider-img.jpg" alt="#")
-							.swiper-slide
-								+e.IMG.slide-img(src="img/slider-img.jpg" alt="#")
 
 	// end s-catalog-slider

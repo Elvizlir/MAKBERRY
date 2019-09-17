@@ -53,54 +53,54 @@
       <div class="header-block" id="header-block">
         <div class="container">
           <div class="row">
-            <div class="header-block__col col-auto"><a href="/"><img class="header-block__logo" src="img/logo.png" alt="#" title=""/></a>
+            <div class="header-block__col col-md-auto col"><a href="/"><img class="header-block__logo" src="img/logo.png" alt="#" title=""/></a>
             </div>
             <div class="header-block__col col d-none d-xl-block">
               <!-- start top-nav-->
               <div class="top-nav block-with-lazy">
-                <div class="container">
-                  <ul class="top-nav__nav mono">
-                    <li class="top-nav__item"><a class="top-nav__link" href="#">компания </a>
-                    </li>
-                    <li class="top-nav__item"><a class="top-nav__link" href="#">акции  </a>
-                    </li>
-                    <li class="top-nav__item"><a class="top-nav__link" href="#">каталог   </a>
-                    </li>
-                    <li class="top-nav__item"><a class="top-nav__link" href="#">кухни markess </a>
-                    </li>
-                    <li class="top-nav__item"><a class="top-nav__link" href="#"> сервис  </a>
-                    </li>
-                    <li class="top-nav__item"><a class="top-nav__link" href="#">Контакты </a>
-                    </li>
-                  </ul>
-                </div>
+                <ul class="top-nav__nav mono">
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">компания </a>
+                  </li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">акции  </a>
+                  </li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">каталог   </a>
+                  </li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">кухни markess </a>
+                  </li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#"> сервис  </a>
+                  </li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">Контакты </a>
+                  </li>
+                </ul>
               </div>
               <!-- end top-nav-->
             </div>
-            <div class="header-block__col header-block__col--form col-xl-3 col">
+            <div class="header-block__col header-block__col--form col-md-auto">
               <div class="form-wrap">
                 <form>
                   <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Введите название или артикул товара" name="text"/>
                   </div>
                   <!-- +e.input-wrap-->
-                  <div class="form-wrap__icon-wrapper">
-                    <button class="form-wrap__btn btn btn-search" type="submit">
-                      <svg class="icon icon-search ">
-                        <use xlink:href="img/svg/sprite.svg#search"></use>
-                      </svg>
-                    </button><a href="#">
-                      <svg class="icon icon-profile ">
-                        <use xlink:href="img/svg/sprite.svg#profile"></use>
-                      </svg></a><a href="#">
-                      <div class="form-wrap__basket-wrapper">
-                        <svg class="icon icon-basket ">
-                          <use xlink:href="img/svg/sprite.svg#basket"></use>
-                        </svg>
-                        <div class="form-wrap__counter">0
-                        </div>
-                      </div></a>
-                  </div>
+                  <button class="form-wrap__btn btn btn-search" type="submit">
+                    <svg class="icon icon-search ">
+                      <use xlink:href="img/svg/sprite.svg#search"></use>
+                    </svg>
+                  </button>
                 </form>
+              </div>
+            </div>
+            <div class="header-block__col col-auto">
+              <div class="header-block__icon-wrapper"><a href="#">
+                  <svg class="icon icon-profile ">
+                    <use xlink:href="img/svg/sprite.svg#profile"></use>
+                  </svg></a><a href="#">
+                  <div class="header-block__basket-wrapper">
+                    <svg class="icon icon-basket ">
+                      <use xlink:href="img/svg/sprite.svg#basket"></use>
+                    </svg>
+                    <div class="header-block__counter">0
+                    </div>
+                  </div></a>
               </div>
             </div>
             <div class="header-block__col phone-col col-auto"><a class="header-block__phone" href="tel:+74959746146">+7 495 <span>974 61 46</span></a><a class="header-block__phone" href="tel:+78002344330">+7 800 <span>234 43 30</span></a>
@@ -113,6 +113,26 @@
       <section class="s-catalog-slider section lazy-background" id="s-catalog-slider">
         <div class="container">
           <div class="row">
+            <div class="s-catalog-slider__slider-col col-12 col-lg-8 order-lg-last">
+              <div class="swiper-btn swiper-btn-prev">
+                <svg class="icon icon-back ">
+                  <use xlink:href="img/svg/sprite.svg#back"></use>
+                </svg>
+              </div>
+              <div class="swiper-btn swiper-btn-next">
+                <svg class="icon icon-next ">
+                  <use xlink:href="img/svg/sprite.svg#next"></use>
+                </svg>
+              </div>
+              <div class="slider--js swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide object-fit-js"><img class="s-catalog-slider__slide-img" src="img/slider-img.jpg" alt="#" title=""/>
+                  </div>
+                  <div class="swiper-slide object-fit-js"><img class="s-catalog-slider__slide-img" src="img/slider-img.jpg" alt="#" title=""/>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="s-catalog-slider__catalog col-12 col-lg-4 bg-light">
               <h3 class="s-catalog-slider__title">лучшие коллекции товаров
               </h3>
@@ -143,26 +163,6 @@
                   </div>
               </div>
             </div>
-            <div class="s-catalog-slider__slider-col col-12 col-lg-8">
-              <div class="swiper-btn swiper-btn-prev">
-                <svg class="icon icon-back ">
-                  <use xlink:href="img/svg/sprite.svg#back"></use>
-                </svg>
-              </div>
-              <div class="swiper-btn swiper-btn-next">
-                <svg class="icon icon-next ">
-                  <use xlink:href="img/svg/sprite.svg#next"></use>
-                </svg>
-              </div>
-              <div class="slider--js swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img class="s-catalog-slider__slide-img" src="img/slider-img.jpg" alt="#" title=""/>
-                  </div>
-                  <div class="swiper-slide"><img class="s-catalog-slider__slide-img" src="img/slider-img.jpg" alt="#" title=""/>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -171,29 +171,7 @@
       <section class="s-popular section lazy-background" id="s-popular">
         <div class="container">
           <div class="row">
-            <div class="s-popular__news-col col-xxl-3 col-12">
-              <div class="s-popular__news-title">Новости компании
-              </div>
-              <div class="s-popular__news-wrapper">
-                <div class="s-popular__news-item">
-                  <div class="s-popular__news-date">28/06/2019
-                  </div><img class="s-popular__news-img" src="img/news-img1.jpg" alt="" role="presentation"/>
-                  <div class="s-popular__news-text">Представляем вашему вниманию фасад Прованс&nbsp;с&nbsp;патиной&nbsp;под покраску по&nbsp;новой программе&nbsp;JUST-&nbsp;in-TIME (Россия)
-                  </div>
-                  <div class="s-popular__news-link"><a href="#">Подробнее</a>
-                  </div>
-                </div>
-                <div class="s-popular__news-item">
-                  <div class="s-popular__news-date">28/06/2019
-                  </div><img class="s-popular__news-img" src="img/news-img2.jpg" alt="" role="presentation"/>
-                  <div class="s-popular__news-text">Представляем вашему вниманию фасад Прованс&nbsp;с&nbsp;патиной&nbsp;под покраску по&nbsp;новой программе&nbsp;JUST-&nbsp;in-TIME (Россия)
-                  </div>
-                  <div class="s-popular__news-link"><a href="#">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-9 col-12">
+            <div class="col-xl-9 col-12 order-xl-last">
               <h2 class="s-popular__title">Популярные товары
               </h2>
               <div class="tabs">
@@ -901,6 +879,28 @@
                 </div>
               </div>
             </div>
+            <div class="s-popular__news-col col-xl-3 col-12">
+              <div class="s-popular__news-title">Новости компании
+              </div>
+              <div class="s-popular__news-wrapper">
+                <div class="s-popular__news-item">
+                  <div class="s-popular__news-date">28/06/2019
+                  </div><img class="s-popular__news-img" src="img/news-img1.jpg" alt="" role="presentation"/>
+                  <div class="s-popular__news-text">Представляем вашему вниманию фасад Прованс&nbsp;с&nbsp;патиной&nbsp;под покраску по&nbsp;новой программе&nbsp;JUST-&nbsp;in-TIME (Россия)
+                  </div>
+                  <div class="s-popular__news-link"><a href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="s-popular__news-item">
+                  <div class="s-popular__news-date">28/06/2019
+                  </div><img class="s-popular__news-img" src="img/news-img2.jpg" alt="" role="presentation"/>
+                  <div class="s-popular__news-text">Представляем вашему вниманию фасад Прованс&nbsp;с&nbsp;патиной&nbsp;под покраску по&nbsp;новой программе&nbsp;JUST-&nbsp;in-TIME (Россия)
+                  </div>
+                  <div class="s-popular__news-link"><a href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -913,13 +913,13 @@
           </div>
           <div class="slider--js-2 swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img class="s-done-slider__slide-img" src="img/new-s1.jpg" alt="#" title=""/>
+              <div class="swiper-slide"><img class="s-done-slider__slide-img swiper-lazy" src="#" data-src="img/new-s1.jpg" alt="" role="presentation"/>
               </div>
-              <div class="swiper-slide"><img class="s-done-slider__slide-img" src="img/new-s2.jpg" alt="#" title=""/>
+              <div class="swiper-slide"><img class="s-done-slider__slide-img swiper-lazy" src="#" data-src="img/new-s2.jpg" alt="" role="presentation"/>
               </div>
-              <div class="swiper-slide"><img class="s-done-slider__slide-img" src="img/new-s1.jpg" alt="#" title=""/>
+              <div class="swiper-slide"><img class="s-done-slider__slide-img swiper-lazy" src="#" data-src="img/new-s1.jpg" alt="" role="presentation"/>
               </div>
-              <div class="swiper-slide"><img class="s-done-slider__slide-img" src="img/new-s2.jpg" alt="#" title=""/>
+              <div class="swiper-slide"><img class="s-done-slider__slide-img swiper-lazy" src="#" data-src="img/new-s2.jpg" alt="" role="presentation"/>
               </div>
             </div>
           </div>
@@ -943,17 +943,17 @@
         <div class="s-contact__header bg-light">
           <div class="container">
             <div class="row">
-              <div class="col-md-auto col-12">
+              <div class="col-lg-auto col-12">
                 <div class="s-contact__header-title">Подпишись на обновления
                 </div>
                 <div class="s-contact__header-subtitle">Узнавай о новинках и скидках первым !
                 </div>
               </div>
-              <div class="col-md col-12">
+              <div class="s-contact__mail-col col-lg col-12">
                 <div class="form-wrap">
                   <form>
                     <div class="row">
-                      <div class="s-contact__header-form-col col">
+                      <div class="s-contact__header-form-col col-md">
                         <div class="form-wrap__input-wrap"><input class="form-wrap__input" type="text" placeholder="Ваша эл. почта" name="text"/>
                         </div>
                         <!-- +e.input-wrap-->
@@ -971,7 +971,7 @@
         <div class="s-contact__body">
           <div class="container">
             <div class="row">
-              <div class="s-contact__body-col col-md col-12">
+              <div class="s-contact__body-col col-md col-12 col-sm-6">
                 <div class="s-contact__body-col-title">Makberry для Вас
                 </div>
                 <ul class="s-contact__body-list">
@@ -989,7 +989,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="s-contact__body-col col-md col-12">
+              <div class="s-contact__body-col col-md col-12 col-sm-6">
                 <div class="s-contact__body-col-title">Makberry для Вас
                 </div>
                 <ul class="s-contact__body-list">
@@ -1048,7 +1048,7 @@
               </div>
               <div class="s-contact__footer-col-links col"><a href="#">Контакты</a><a href="#">Весь каталог одним списком</a>
               </div>
-              <div class="s-contact__footer-col-copy col">
+              <div class="s-contact__footer-col-copy col-auto">
                 <div class="s-contact__copy">Makberry.ru (c) 2004 -2019
                 </div><a href="tel:+78002344330">+7 (800) 234 43 30</a><a href="tel:+74959746146">+7 (495) 974 61 46</a><a href="mailto:zakaz@makberry.ru">zakaz@makberry.ru</a>
               </div>

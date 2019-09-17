@@ -125,6 +125,7 @@ jQuery(document).ready(function ($) {
 		slidesPerGroup: 1,
 
 		// centeredSlides: true,
+		lazy: true,
 		loop: true,
 		loopFillGroupWithBlank: true,
 		touchRatio: 0.2,
@@ -139,8 +140,9 @@ jQuery(document).ready(function ($) {
 	var swiper5 = new Swiper('.slider--js-2', {
 		// slidesPerView: 5,
 		slidesPerView: 2,
+		lazy: true,
 		watchOverflow: true,
-		spaceBetween: 25,
+		spaceBetween: 24,
 		// freeMode: true,
 		// watchOverflow: true,
 		slidesPerGroup: 1,

@@ -4,20 +4,20 @@ mixin s-contact()
 		+e.header.bg-light
 			.container
 				.row
-					.col-md-auto.col-12
+					.col-lg-auto.col-12
 						+e.header-title Подпишись на обновления
 						+e.header-subtitle Узнавай о новинках и скидках первым !
-					.col-md.col-12
+					+e.mail-col.col-lg.col-12
 						+form-wrap
 							.row
-								.s-contact__header-form-col.col
+								.s-contact__header-form-col.col-md
 									+input("Ваша эл. почта")
 								.s-contact__header-form-col.col-auto
 									.s-contact__btn.btn.btn-warning(type="submit") Подпишите меня
 		+e.body
 			.container
 				.row
-					+e.body-col.col-md.col-12
+					+e.body-col.col-md.col-12.col-sm-6
 						+e.body-col-title Makberry для Вас
 						+e.UL.body-list
 							+e.LI.body-list-item
@@ -32,7 +32,7 @@ mixin s-contact()
 								a(href="#") Дизайнеры
 							+e.LI.body-list-item
 								a(href="#") Статьи
-					+e.body-col.col-md.col-12
+					+e.body-col.col-md.col-12.col-sm-6
 						+e.body-col-title Makberry для Вас
 						+e.UL.body-list
 							+e.LI.body-list-item
@@ -74,7 +74,7 @@ mixin s-contact()
 					+e.footer-col-links.col
 						a(href="#") Контакты
 						a(href="#") Весь каталог одним списком
-					+e.footer-col-copy.col
+					+e.footer-col-copy.col-auto
 						+e.copy Makberry.ru (c) 2004 -2019
 						a(href="tel:+78002344330") +7 (800) 234 43 30
 						a(href="tel:+74959746146") +7 (495) 974 61 46

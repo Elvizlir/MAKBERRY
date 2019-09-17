@@ -70,9 +70,16 @@
 		object-position: center;
 	}
 	.swiper-btn-prev{
+		@include media-breakpoint-down(md){
+			left: rem(5);
+			
+		}
 		left: rem(20);
 	}
 	.swiper-btn-next{
+		@include media-breakpoint-down(md){
+			right: rem(5);
+		}
 		right: rem(20);
 	}
 	@include media-breakpoint-up(xl) {}
@@ -102,18 +109,33 @@
 }
 
 .swiper-btn{
+	@include media-breakpoint-down(md){
+		width: rem(30);
+		height: rem(35);
+	}
 	width: rem(50);
+	height: rem(45);
 	position: absolute;
 	@include a-cent(y);
-	height: rem(45);
 	background-color: #000;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
 	z-index: 2;
+	@include mt;
 	.icon{
+		@include mt;
+		@include media-breakpoint-down(md){
+			font-size: rem(20);
+		}
 		font-size: rem(30);
 		color: #fff;
+	}
+	&:hover{
+		background-color: $primary;
+		.icon{
+			color: #000;
+		}
 	}
 }

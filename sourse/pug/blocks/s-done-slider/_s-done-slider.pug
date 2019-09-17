@@ -7,13 +7,13 @@ mixin s-done-slider()
 			.slider--js-2.swiper-container
 				.swiper-wrapper
 					.swiper-slide
-						+e.IMG.slide-img(src="img/new-s1.jpg" alt="#")
+						+e.IMG.slide-img.swiper-lazy(src="#" data-src="img/new-s1.jpg" alt="")
 					.swiper-slide
-						+e.IMG.slide-img(src="img/new-s2.jpg" alt="#")
+						+e.IMG.slide-img.swiper-lazy(src="#" data-src="img/new-s2.jpg" alt="")
 					.swiper-slide
-						+e.IMG.slide-img(src="img/new-s1.jpg" alt="#")
+						+e.IMG.slide-img.swiper-lazy(src="#" data-src="img/new-s1.jpg" alt="")
 					.swiper-slide
-						+e.IMG.slide-img(src="img/new-s2.jpg" alt="#")
+						+e.IMG.slide-img.swiper-lazy(src="#" data-src="img/new-s2.jpg" alt="")
 			+e.btn-wrap
 				.swiper-btn.swiper-btn-prev
 						+icon("back")
