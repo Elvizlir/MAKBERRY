@@ -1,6 +1,9 @@
 .top-line {
   text-align: right;
   padding: rem(5) 0;
+  &__mob-col{
+    position: relative;
+  }
   &__city{
     @extend .mono;
     a{

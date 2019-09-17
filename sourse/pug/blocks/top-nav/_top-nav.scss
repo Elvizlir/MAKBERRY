@@ -79,16 +79,17 @@
 $h: em(2);
 
 .toggle-menu-mobile {
-	display: block;
+	cursor: pointer;
+	display: inline-block;
 	height: $h* 14;
-	margin-top: 15px;
 	margin-left: 0;
-	position: fixed;
+	position: absolute;
 	z-index: 999 !important;
-	right: 0;
+	left: rem(10);
 	padding: 3px;
 	border-radius: 5px;
-	top: $h;
+	top: 0;
+	left: 0;
 
 
 	span:after,

@@ -2,6 +2,10 @@ mixin top-line()
 	// start .top-line
 	+b.top-line.block-with-lazy.bg-light
 		.container
-			+e.city Ваш город: 
-				a(href="#") москва
+			.row
+				+e.mob-col.col-auto
+					+mob-mnu()
+				+e.col-city.col
+					+e.city Ваш город: 
+						a(href="#") москва
 	// end .top-line
