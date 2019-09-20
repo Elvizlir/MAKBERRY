@@ -145,9 +145,18 @@
 	.btn{
 		border-radius: 0
 	}
+	&__btn-plus{
+		color: #41A62A;
+	}
+	&__btn-minus{
+		color: #e2001a;
+	}
 	&__buy-price{
 		color: #e2001a;
-		font-size: rem(52);
+		font-size: rem(40);
+		@include media-breakpoint-up(md){
+			font-size: rem(52);
+		}
 	}
 
 	&__buy-col{
@@ -196,8 +205,11 @@
 	}
 	&__buy-btn{
 		cursor: pointer;
-		font-size: rem(47);
+		font-size: rem(40);
 		position: relative;
+		@include media-breakpoint-up(md){
+			font-size: rem(47);
+		}
 		&:not(:last-child){
 			margin-bottom: rem(20);
 		}
@@ -267,6 +279,10 @@
 				}
 			}
 			&__btn{
+				@include media-breakpoint-up(md){
+					font-size: rem(30);
+				}
+				font-size: rem(20);
 				flex-grow: 1;
 				@include mt;
 				text-align: center;
@@ -274,7 +290,6 @@
 				border: 2px solid #1A181C;
 				background-color: #1A181C;
 				color: #fff;
-				font-size: rem(30);
 			}
 			&__wrap{
 				padding: rem(25);
