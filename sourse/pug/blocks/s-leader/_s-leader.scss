@@ -1,0 +1,86 @@
+.s-leader {
+	.container{
+		@include media-breakpoint-up(xl){
+			max-width: rem(1230);
+		}
+	}
+	font-family: $font-family-extra;
+	h2{
+		font-size: rem(40);
+	}
+	&__btn{
+		.icon{
+			font-size: rem(20);
+			color: #000;
+			position: absolute;
+			top: rem(10);
+			left: rem(10);
+		}
+	}
+	&__item{
+		@include media-breakpoint-down(sm){
+			margin-bottom: rem(50);
+		}
+		display: flex;
+		flex-direction: column;
+
+	}
+	&__image{
+		@include media-breakpoint-down(sm){
+			margin-left: auto;
+			margin-right: auto;
+		}
+		max-width: rem(272);
+		height: auto;
+		width: 100%;
+		margin-bottom: rem(40);
+	}
+	&__title{
+		margin-top: auto;
+		font-size: rem(18);
+		margin-bottom: rem(30);
+	}
+	&__price{
+		font-size: rem(25);
+		font-weight: 700;
+		color: #89ba43;
+		margin-bottom: rem(20);
+	}
+	&__btn{
+		max-width: rem(176);
+		border-radius: 0;
+		position: relative;
+		border: 1px solid #000;
+		font-size: rem(20);
+		font-weight: 700;
+		padding-left: rem(35);
+		text-transform: uppercase;
+		cursor: pointer;
+
+	}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+}

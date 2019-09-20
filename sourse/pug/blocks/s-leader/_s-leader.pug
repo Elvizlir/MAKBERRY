@@ -1,0 +1,19 @@
+mixin s-leader()
+	// start s-leader
+	+b.SECTION.s-leader.section.lazy-background#s-leader&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Лидеры продаж
+			.row
+				mixin lead-i(i, t, p)
+					+e.item.col-md-4.col-sm-6
+						+e.IMG.image(src=`img/lead${i}.jpg` alt="")
+						+e.title=t
+						+e.price=p
+						+e.btn.btn.btn-primary 
+							+icon("basket") 
+							| в корзину
+				+lead-i("1","Фасад Фиджи Just In Time  956х596","7 625 ₽")
+				+lead-i("2","Фасад глухой Интегра Just In Time 956х596","5 700 ₽")
+				+lead-i("3","Фасад глухой Кальяри 956х596","6 197 ₽")
+	// end s-leader

@@ -1,0 +1,102 @@
+mixin s-product()
+	// start s-product
+	+b.SECTION.s-product.section.lazy-background#s-product&attributes(attributes)
+		.container
+			+e.main-block
+				+e.H1.title Фасад глухой ЛУГАНО, 956х596мм
+				.row.tabs
+					+e.img-col.col.tabs__wrap
+						+e.IMG.main-img.tabs__content.active(src="img/product-img.jpg" alt="")
+						+e.IMG.main-img.tabs__content(src="img/product-img.jpg" alt="")
+						+e.IMG.main-img.tabs__content(src="img/product-img.jpg" alt="")
+						+e.IMG.main-img.tabs__content(src="img/product-img.jpg" alt="")
+						+e.IMG.main-img.tabs__content(src="img/product-img.jpg" alt="")
+						+e.IMG.main-img.tabs__content(src="img/product-img.jpg" alt="")
+						+e.IMG.main-img.tabs__content(src="img/product-img.jpg" alt="")
+						+e.IMG.main-img.tabs__content(src="img/product-img.jpg" alt="")
+						+e.IMG.main-img.tabs__content(src="img/product-img.jpg" alt="")
+					+e.color-col.col-xl-3.col-4
+						+e.color-title выбор цвета
+						+e.color-wrapper.tabs__caption
+							mixin color-i(i)
+								+e.color-item.tabs__btn&attributes(attributes)
+									+e.IMG.color-img(src=`img/color-i${i}.jpg` alt="")
+							+color-i("1")(class="active")
+							+color-i("2")
+							+color-i("3")
+							+color-i("4")
+							+color-i("5")
+							+color-i("6")
+							+color-i("7")
+							+color-i("8")
+							+color-i("9")
+					+e.buy-col.col-xl-4
+						+e.art Артикул: 
+							span 0154200102
+						+e.buy-title в наличии на складе
+						+e.buy-price-wrap
+							+e.buy-price 6 538 ₽
+							+e.count-wrap
+								+e.coutn-btn-wrap
+									+e.btn-plus.count-btn.btn.btn-light +
+									+e.current 2
+									+e.btn-minus.count-btn.btn.btn-light -
+								span шт
+						+e.storage В наличии: 
+							span 14 шт
+						+e.buy-btn.btn.btn-green
+							+icon("basket") 
+							| Купить
+						+e.buy-btn.btn.btn-green-dark Купить в <strong>ОДИН</strong> клик
+						+e.deliver.deliver-self Самовывоз со склада <br>Сегодня
+							span Бесплатно
+						+e.deliver Доставка по Москве <br>Завтра
+							span 500 р.
+						+e.deliver Пункты самовывоза
+							span 350 р.
+						+e.IMG.deliver-img(src="img/deliver1.png" alt="")
+						+e.discount-wrap
+							+e.discount-text Скидка 
+								span 2%
+							+e.discount-cards
+								+e.IMG.card-image(src="img/card-img.jpg" alt="")
+				+e.disk-tabs.tabs
+					.tabs__caption
+						.tabs__btn.active Описание
+						.tabs__btn Документация
+						.tabs__btn Способы доставки
+						.tabs__btn Отзывы
+						.tabs__btn Услуги
+					.tabs__wrap
+						.tabs__content.active 
+							p Фасад &laquo;ЛУГАНО&raquo; в&nbsp;утонченном неоклассическом стиле&nbsp;&mdash; это интерпретация классических традиций на&nbsp;современный лад, сочетающая в&nbsp;себе респектабельность и&nbsp;сдержанность одновременно. Модель выполнена в&nbsp;полном соответствии с&nbsp;последними тенденциями дизайна и&nbsp;подойдет всем, кто отдает дань уважения классике, но&nbsp;при этом не&nbsp;отстает от&nbsp;времени. Толщина фасада 20&nbsp;мм. рамка: массив ясеня, центральная часть: МДФ, облицованная шпоном ясеня.
+							p Отделка: 
+							ul
+								li под покраску (грунт акриловый белый) 
+								li готовые цвета just-in-time (однотонные и с патиной)
+						.tabs__content
+							p Фасад &laquo;ЛУГАНО&raquo; в&nbsp;утонченном неоклассическом стиле&nbsp;&mdash; это интерпретация классических традиций на&nbsp;современный лад, сочетающая в&nbsp;себе респектабельность и&nbsp;сдержанность одновременно. Модель выполнена в&nbsp;полном соответствии с&nbsp;последними тенденциями дизайна и&nbsp;подойдет всем, кто отдает дань уважения классике, но&nbsp;при этом не&nbsp;отстает от&nbsp;времени. Толщина фасада 20&nbsp;мм. рамка: массив ясеня, центральная часть: МДФ, облицованная шпоном ясеня.
+							p Отделка: 
+							ul
+								li под покраску (грунт акриловый белый) 
+								li готовые цвета just-in-time (однотонные и с патиной) 
+						.tabs__content
+							p Фасад &laquo;ЛУГАНО&raquo; в&nbsp;утонченном неоклассическом стиле&nbsp;&mdash; это интерпретация классических традиций на&nbsp;современный лад, сочетающая в&nbsp;себе респектабельность и&nbsp;сдержанность одновременно. Модель выполнена в&nbsp;полном соответствии с&nbsp;последними тенденциями дизайна и&nbsp;подойдет всем, кто отдает дань уважения классике, но&nbsp;при этом не&nbsp;отстает от&nbsp;времени. Толщина фасада 20&nbsp;мм. рамка: массив ясеня, центральная часть: МДФ, облицованная шпоном ясеня.
+							p Отделка: 
+							ul
+								li под покраску (грунт акриловый белый) 
+								li готовые цвета just-in-time (однотонные и с патиной) 
+						.tabs__content
+							p Фасад &laquo;ЛУГАНО&raquo; в&nbsp;утонченном неоклассическом стиле&nbsp;&mdash; это интерпретация классических традиций на&nbsp;современный лад, сочетающая в&nbsp;себе респектабельность и&nbsp;сдержанность одновременно. Модель выполнена в&nbsp;полном соответствии с&nbsp;последними тенденциями дизайна и&nbsp;подойдет всем, кто отдает дань уважения классике, но&nbsp;при этом не&nbsp;отстает от&nbsp;времени. Толщина фасада 20&nbsp;мм. рамка: массив ясеня, центральная часть: МДФ, облицованная шпоном ясеня.
+							p Отделка: 
+							ul
+								li под покраску (грунт акриловый белый) 
+								li готовые цвета just-in-time (однотонные и с патиной) 
+						.tabs__content
+							p Фасад &laquo;ЛУГАНО&raquo; в&nbsp;утонченном неоклассическом стиле&nbsp;&mdash; это интерпретация классических традиций на&nbsp;современный лад, сочетающая в&nbsp;себе респектабельность и&nbsp;сдержанность одновременно. Модель выполнена в&nbsp;полном соответствии с&nbsp;последними тенденциями дизайна и&nbsp;подойдет всем, кто отдает дань уважения классике, но&nbsp;при этом не&nbsp;отстает от&nbsp;времени. Толщина фасада 20&nbsp;мм. рамка: массив ясеня, центральная часть: МДФ, облицованная шпоном ясеня.
+							p Отделка: 
+							ul
+								li под покраску (грунт акриловый белый) 
+								li готовые цвета just-in-time (однотонные и с патиной) 
+
+	// end s-product
