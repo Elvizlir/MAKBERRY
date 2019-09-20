@@ -21,6 +21,9 @@
 		font-weight: bold;
 	}
 	&__img-col{
+		@include media-breakpoint-down(sm){
+			margin-bottom: rem(30);
+		}
 		display: flex;
 		align-items: flex-end;
 		justify-content: center;
@@ -33,35 +36,47 @@
 	&__color{
 		&-col{
 			.tabs{
+				&__btn{
+					border: 2px solid #fff;
+				}
 				&__caption{
 					.active{
 						position: relative;
+						@include media-breakpoint-down(sm){
+							border: 2px solid $green-dark;
+						}
 						@include mt;
 						&::before{
-							content: "";
-							width: rem(30);
-							height: rem(35);
-							background-image: url(../img/svg/color-svg-left.svg);
-							background-repeat: no-repeat;
-							background-size: cover;
-							@include a-cent(y);
-							right: rem(-45);
-							pointer-events: none;
+							@include media-breakpoint-up(md){
+								content: "";
+								width: rem(30);
+								height: rem(35);
+								background-image: url(../img/svg/color-svg-left.svg);
+								background-repeat: no-repeat;
+								background-size: cover;
+								@include a-cent(y);
+								right: rem(-45);
+								pointer-events: none;
+
+							}
 						}
 						&::after{
-							content: "";
-							width: rem(30);
-							height: rem(35);
-							background-image: url(../img/svg/color-svg.svg);
-							background-repeat: no-repeat;
-							background-size: cover;
-							@include a-cent(y);
-							// margin-top: -13%;
-							left: rem(-50);
-							// transform-origin: center;
-							// transform: rotate(180deg);
-							// transform: translateY(-50%);
-							pointer-events: none;
+							@include media-breakpoint-up(md){
+								content: "";
+								width: rem(30);
+								height: rem(35);
+								background-image: url(../img/svg/color-svg.svg);
+								background-repeat: no-repeat;
+								background-size: cover;
+								@include a-cent(y);
+								// margin-top: -13%;
+								left: rem(-50);
+								// transform-origin: center;
+								// transform: rotate(180deg);
+								// transform: translateY(-50%);
+								pointer-events: none;
+
+							}
 						}
 					}
 				}
@@ -75,16 +90,27 @@
 			// font-family: $font-family-extra;
 			text-transform: uppercase;
 			font-size: rem(23);
-			max-width: rem(85);
+			@include media-breakpoint-up(md){
+				max-width: rem(85);
+			}
 			line-height: rem(27);
 			text-align: center;
 			margin-bottom: rem(5);
 		}
 		&-wrapper{
+			@include media-breakpoint-down(sm){
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
 			border: 2px solid #000;
 			padding: rem(12) rem(10);
 		}
 		&-item{
+			@include media-breakpoint-down(sm){
+				// flex-grow: 1;
+				padding: rem(5);
+			}
 			&:not(:last-child){
 				margin-bottom: rem(5);
 			}
